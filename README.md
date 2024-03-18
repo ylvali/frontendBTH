@@ -1,3 +1,6 @@
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/?branch=main)
+[![Build Status](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/build-status/main)
+
 This is an angular application 
 Made as a course project 2024, BTH - Blekinge technical institute 
  

@@ -6,6 +6,9 @@ node_js:
 
 sudo: false
 
+addons:
+  chrome: stable
+
 git:
     submodules: false
 
