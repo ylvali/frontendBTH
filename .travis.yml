@@ -9,6 +9,9 @@ addons:
   chrome: stable
 
 dist: xenial
+services:
+  - xvfb
+  
 addons:
   apt:
     sources:
