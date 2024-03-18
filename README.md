@@ -1,10 +1,13 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/quality-score.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/?branch=main)
 [![Build Status](https://scrutinizer-ci.com/g/ylvali/frontendBTH/badges/build.png?b=main)](https://scrutinizer-ci.com/g/ylvali/frontendBTH/build-status/main)
+<img src="https://app.travis-ci.com/ylvali/frontendBTH.svg?token=zbGBcfgSpBchF7HShAt4&branch=main" alt='travis test'>
 
+
+# About
 This is an angular application 
 Made as a course project 2024, BTH - Blekinge technical institute 
  
-Run npm install - builds the project. 
+Run npm run build - builds the project. 
 Run ng test - tests the environment.
 
 Selenium tests are placed in the TestSelenium directory.
