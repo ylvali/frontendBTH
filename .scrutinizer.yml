@@ -7,4 +7,4 @@ build:
                 override:
                     - js-scrutinizer-run
   environment:
-      node: 16
+      node: 16.13
