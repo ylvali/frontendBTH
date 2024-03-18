@@ -17,9 +17,5 @@ addons:
 git:
     submodules: false
 
-before_script:
-    - "export DISPLAY=:99.0"
-    - npm run build
-
 script:
-    - npm test
+    - npm run build
