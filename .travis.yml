@@ -23,5 +23,3 @@ git:
 before_script:
     - npm run build
 
-script:
-    - npm test
