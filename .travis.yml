@@ -11,7 +11,7 @@ addons:
 dist: xenial
 services:
   - xvfb
-  
+
 addons:
   apt:
     sources:
@@ -20,5 +20,8 @@ addons:
 git:
     submodules: false
 
-script:
+before_script:
     - npm run build
+
+script:
+    - npm test
