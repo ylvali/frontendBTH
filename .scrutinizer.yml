@@ -6,6 +6,5 @@ build:
             tests:
                 override:
                     - js-scrutinizer-run
-  build:
-    environment:
-        node: 10.15.3
+  environment:
+      node: 14
