@@ -20,6 +20,6 @@ addons:
 git:
     submodules: false
 
-before_script:
+script:
     - npm run build
 

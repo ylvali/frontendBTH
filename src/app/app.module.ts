@@ -25,8 +25,6 @@ const appRoutes: Routes = [
   { path: 'api', component: ApiConnectComponent },
   { path: 'reportApi', component: ReportAPIComponent },
   { path: 'seeReports', component: SeeReportsComponent }
-
-
   ]
 
 @NgModule({
