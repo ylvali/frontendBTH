@@ -1,0 +1,80 @@
+
+
+<div id="theForm">
+
+    <div id="textLayer">
+
+      <h2> Register </h2>
+
+      <div id="inputBoxes">
+          Name: <input #box1 (blur) = "checkValueString(box1.value)" type="text" class='input'> 
+          <div class='output1'> <p class="smallCap"> Letters & space, english alphabet </p><br> </div>
+          <div class='output'>{{value1_feedback}} </div> <br> 
+
+          E-mail: <input #box2 (blur) = "checkForEmail(box2.value)" type="text" class='input'><br>
+          <div class='output1'> <p class="smallCap"> Standard email format </p> </div>
+          <div class='output'>{{value2_feedback}} </div> <br> 
+
+          Password: <input #box3 (blur) = "checkThePassword(box3.value)" type="password" class='input'><br>
+          <div class='output1'> <p class="smallCap"> Letters & numbers only </p> </div>
+          <div class='output'>{{value3_feedback}} </div> 
+        <br>  Birthday:
+        <div class='output1'> <p class="smallCap"> Choose your birthday by clicking the sign buttons below. </p> </div>
+      </div>
+
+      <div id="birthDay">
+
+        <div class="bdayB">
+          <p> Year: </p>
+          <p> {{theSelectedYear}} </p>
+
+          <div (click)="nextYear()" class="changeDate"> > </div>
+          <div (click)="previousYear()" class="changeDate"> < </div> <br/>
+        </div>
+
+        <div class="bdayB">
+          <p> Month: </p>
+          <p> {{theSelectedMonth}} </p>
+
+          <div (click)="nextMonth()" class="changeDate"> > </div>
+          <div (click)="previousMonth()" class="changeDate"> < </div> <br/>
+        </div>
+
+        <div class="bdayB">
+          <p> Day: </p>
+          <p> {{theSelectedDay}} </p>
+
+          <div (click)="nextDay()" class="changeDate"> > </div>
+          <div (click)="previousDay()" class="changeDate"> < </div> <br/>
+        </div>
+
+        <div class ="bdayB" id="lastBox">
+          <p> Valt datum: </p>
+          <p> {{theSelectedDate}} </p>
+        </div>
+      </div>
+
+    </div>
+    <div (click)="theForm(box1.value, box2.value, box3.value)" class="submitBtn"> Submit </div>
+
+
+</div>
+
+<div id="inputPres">
+  <div>{{ feedback }}</div>
+
+  <p> {{response}} </p>
+
+  <p> {{response2}} </p>
+
+
+  <br/>
+  <div>{{ value1 }}</div>
+
+  <div>{{ value2 }}</div>
+
+  <div>{{ value3 }}</div>
+
+  <div>{{ value4 }}</div>
+
+</div>

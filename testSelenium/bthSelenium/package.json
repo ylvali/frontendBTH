@@ -1,0 +1,20 @@
+{
+  "name": "multipage-test",
+  "version": "1.0.0",
+  "description": "Use Selenium to function test example/calculator/vanilla-spa",
+  "main": null,
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node node_modules/http-server/bin/http-server -p 8082 src",
+    "test": "mocha test/**/*.js"
+  },
+  "author": "Andreas Arnesson and Emil Folino",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "mocha": "^10.2.0",
+    "selenium-webdriver": "3.0.0"
+  }
+}

@@ -1,0 +1,232 @@
+
+h1 {
+  text-align: center;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+#theForm {
+  width: 80%;
+  min-height: 500px;
+  background-image: url("bground.png");
+  background-color: black;
+  color: white;
+  border-radius: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px;
+  overflow: hidden;
+}
+
+#textLayer {
+  width: 90%;
+  min-height: 600px;
+  background-color: black;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+#inputBoxes {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+  padding:20px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.output {
+  font-size: 0.7em;
+  color: red;
+  text-align: right;
+  width: 80%;
+  padding: 3px;
+}
+
+.output1 {
+  font-size: 0.9em;
+  color: rgb(98, 145, 116);
+  text-align: right;
+  width: 80%;
+  padding: 3px;
+}
+
+#birthDay {
+  width: 100%;
+  margin: 0 auto;
+  border-color: white;
+  border-style: groove;
+}
+
+.bdayB {
+  width: 25%;
+  float: left;
+  min-height: 100px;
+}
+
+.changeDate {
+  cursor: pointer;
+  font-size: 2em;
+  width: 35px;
+  border-radius: 20px;
+  background-color: #489172;
+  margin: 0 auto;
+}
+
+.changeDate:hover {
+  color: red;
+}
+
+#lastBox {
+  background-color: black;
+}
+
+.submitBtn {
+  clear: both;
+  margin: 0 auto;
+  background-color: #489172;
+  width: 25%;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  margin-top: 25%;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background-color: gray;
+  color: black;
+}
+
+#inputPres {
+  /* width: 100%; */
+  min-height: 200px;
+  background-color: #496d89;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.smallCap {
+  font-size: 0.7em;
+  text-transform: uppercase;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #708DA4;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #708DA4;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #708DA4;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #708DA4;
+  border-radius: 4px;
+  resize: vertical;
+  outline: none;
+}
+
+input[type=text]:hover {
+  background-color: #beddcf;
+
+  outline: none;
+}
+
+input[type=text]:focus {
+  background-color: #74AE95;
+  border: 1px solid #708DA4;
+  outline: none;
+}
+
+
+
+
+/* Responsive Styles */
+@media screen and (max-width: 1000px) {
+
+#theForm {
+  width: 100%;
+  height: auto;
+}
+
+#textLayer {
+  width: 90%;
+  min-height: 450px;
+}
+
+#inputBoxes {
+  width: 70%;}
+}
+
+#birthDay p {
+  background-color: black;
+  border-radius: 24px;
+}
+
+
+
+@media screen and (max-width: 550px) {
+
+  #textLayer {
+    min-height: 550px;
+    width: 80%;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #textLayer {
+      min-height: 550px; 
+      width: 80%;
+    }
+
+    #inputBoxes {
+      padding-left: 0px;
+      font-size: 0.8em;
+    }
+
+    .bdayB  {
+      font-size: 0.8em;
+      width: 30%;
+    }
+
+    #lastBox {
+      clear: both;
+      float: none;
+      margin: 0 auto;
+      width: 50%;
+      background-color: black;
+      border-radius: 24px;
+    }
+
+}

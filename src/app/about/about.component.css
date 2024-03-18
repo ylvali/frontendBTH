@@ -1,0 +1,33 @@
+
+h1 {
+  text-align: center;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.innerBox1 {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.imgDiv {
+  margin: 0 auto;
+  max-width: 250px;
+  width: 100%;
+}
+
+.imgDiv img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+@media screen and (max-width: 550px) {
+
+  .imgDiv {
+    max-width: 150px;
+  }
+}
