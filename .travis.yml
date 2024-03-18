@@ -10,7 +10,7 @@ git:
     submodules: false
 
 before_script:
-    - npm build
+    - npm run build
 
 script:
     - npm test
