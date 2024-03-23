@@ -1,0 +1,21 @@
+<div id="nameField" #nameField>
+    <p #nameTitle type="text" >Your name: </p>
+    <input #name type="text" id="input1" value='BladeRunner'> 
+    <div #nameBtn (click)="addName(name.value); name.value=''" class="btn">Send</div>
+</div>
+
+<div class="chat">  
+
+        <div id="chat">
+            <ul id="messages" *ngFor="let message of messages">
+                <li> {{message}} </li>
+            </ul>
+        </div>
+
+        <div id="form">
+            <input #box1 type="text" id="input" class='input' value='' >
+            <div (click)="sendMsg(box1.value); box1.value=''" >Send</div>
+        </div>
+        <p id="chatName"></p>
+
+</div>

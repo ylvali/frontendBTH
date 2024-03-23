@@ -9,7 +9,6 @@
     "test": "ng test",
     "deploy": "ng build && rsync -av dist/my-app/* root@104.248.170.86:/var/www/jsframeworks.ysojs.se/html/",
     "publish": "rsync -av dist/my-app/* root@104.248.170.86:/var/www/jsframeworks.ysojs.se/html/"
-
   },
   "private": true,
   "dependencies": {
@@ -23,7 +22,9 @@
     "@angular/router": "^16.2.0",
     "angular-hero": "^0.0.7",
     "angular-in-memory-web-api": "^0.16.0",
+    "ngx-socket-io": "^4.5.0",
     "rxjs": "~7.8.0",
+    "socket.io": "^4.5.1",
     "tslib": "^2.3.0",
     "zone.js": "~0.13.0"
   },

@@ -1,0 +1,12 @@
+.chat { background-color: #585555; color: white; font-size: 1.5em; width:80%; padding: 5%; padding-bottom: 7%; border-radius: 24px; margin: 0 auto;}
+#nameField {width: 50%; margin: 0 auto; min-height: 200px; font-size: 0.8em; text-transform: uppercase; position: absolute; width: 90%; height: 30%; background: black; text-align: center; border-radius: 24px;}
+
+#form { background: rgba(0, 0, 0, 0.15); padding: 1%; position: fixed; bottom: 72px; left: 0; right: 0; display: flex; height: 4rem; box-sizing: border-box; backdrop-filter: blur(10px); }
+#input1 { border: none; padding: 1%; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; }
+#input { border: none; padding: 0 1rem; flex-grow: 1; border-radius: 2rem; margin: 0.25rem; min-height: 25px;}
+#input:focus { outline: none; }
+.btn { background: #333; border: none; padding: 1%; margin: 0.25rem; border-radius: 3px; outline: none; color: #fff; } 
+
+#messages { list-style-type: none; margin: 0; padding: 0; }
+#messages > li { background: #767373; padding: 0.5rem 1rem; }
+#messages > li:nth-child(odd) { background: #686464; }

@@ -16,15 +16,20 @@ import { ReportsComponent } from './reports/reports.component';
 import { ReportAPIComponent } from './report-api/report-api.component';
 import { SeeReportsComponent } from './see-reports/see-reports.component';
 
+import { ChatComponent } from './chat/chat.component'; //chat
+import { SocketIoModule, SocketIoConfig } from 'ngx-socket-io'; //chat
+const config: SocketIoConfig = { url: 'https://chat-server.ysojs.se', options: {} }; //chat
+
 const appRoutes: Routes = [
   { path: 'reports/week/1', component: ReportComponent },
   { path: 'reports/week/2', component: Report2Component },
   { path: '', component: AboutComponent },
   { path: 'form', component: FormComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'api', component: ApiConnectComponent },
-  { path: 'reportApi', component: ReportAPIComponent },
-  { path: 'seeReports', component: SeeReportsComponent }
+  { path: 'api', component: ApiConnectComponent},
+  { path: 'reportApi', component: ReportAPIComponent},
+  { path: 'seeReports', component: SeeReportsComponent },
+  { path: 'chat', component: ChatComponent}
   ]
 
 @NgModule({
@@ -38,7 +43,8 @@ const appRoutes: Routes = [
     LoginComponent,
     ReportsComponent,
     ReportAPIComponent,
-    SeeReportsComponent
+    SeeReportsComponent,
+    ChatComponent //chat
     ],
   imports: [
     HttpClientModule,
@@ -46,7 +52,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
     { enableTracing: true }
-    )
+    ),
+    BrowserModule, //chat
+    SocketIoModule.forRoot(config) //chat
   ],
   providers: [],
   bootstrap: [AppComponent]
